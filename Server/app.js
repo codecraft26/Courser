@@ -24,7 +24,9 @@ app.use(
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
+import user from "./routes/userRoutes.js";
 
+app.use("/api/v1",user)
 
 
 export default app;
